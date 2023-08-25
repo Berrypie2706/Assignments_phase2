@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Assignment11.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div><h2 class="bg-primary text-center">Article Database</h2></div>
+        <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx" CssClass="navbar-brand text-white">Home</asp:HyperLink>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse"id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Arcticle.aspx" CssClass="navbar-brand text-white">Article</asp:HyperLink>
+
+                </li>
+                 <li class="nav-item">
+                         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Article2.aspx" CssClass="navbar-brand text-white">Article Table</asp:HyperLink>
+
+                </li>
+                    <li class="nav-item">
+                         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Contact.aspx" CssClass="navbar-brand text-white">Contact</asp:HyperLink>
+
+                </li>
+                
+                    <li class="nav-item">
+                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/About.aspx" CssClass="navbar-brand text-white">About</asp:HyperLink>
+
+                </li>
+
+                   
+                    <li class="nav-item">
+                         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/AddArcticle_1.aspx" CssClass="navbar-brand text-white ">Add Article</asp:HyperLink>
+
+                </li>
+                    </ul>
+
+        </div>
+            </div>
+            </nav>
+        <div>
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+       <div> <footer class="bg-warning text-white m-2 text-center">All rights reserved  &reg"</footer></div>
+    </form>
+</body>
+</html>
